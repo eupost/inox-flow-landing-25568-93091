@@ -2,7 +2,7 @@ import { CheckCircle2, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 
 const TechnicalInfoSection = () => {
-  const whatsappNumber = "5511952477224";
+  const whatsappNumber = "5511911569919";
 
   return (
     <section className="py-16 md:py-24 bg-background">

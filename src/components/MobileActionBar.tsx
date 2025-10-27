@@ -2,7 +2,7 @@ import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 
 const MobileActionBar = () => {
-  const whatsappNumber = "5511911589919";
+  const whatsappNumber = "5511911569919";
 
   return (
     <div className="md:hidden fixed bottom-0 left-0 right-0 bg-card border-t border-border shadow-lg z-50 p-2 sm:p-3">

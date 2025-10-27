@@ -78,7 +78,7 @@ const TestimonialsSection = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://wa.me/5511952477224?text=Olá! Gostaria de solicitar um orçamento para corrimão de aço inox."
+            href="https://wa.me/5511911569919?text=Olá! Gostaria de solicitar um orçamento para corrimão de aço inox."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-green-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-xl"

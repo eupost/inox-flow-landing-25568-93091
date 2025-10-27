@@ -21,7 +21,7 @@ const QuoteForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const whatsappNumber = "5511911589919";
+    const whatsappNumber = "5511911569919";
     const message = `
 *Solicitação de Orçamento - Corrimão Inox*
 

@@ -2,8 +2,8 @@ import { Phone, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo-dk-corrimao.png";
 
 const Header = () => {
-  const whatsappNumber = "5511911589919";
-  const phoneNumber = "11 91158-9919";
+  const whatsappNumber = "5511911569919";
+  const phoneNumber = "11 2574-2864";
 
   return (
     <header className="bg-white text-foreground py-2 sm:py-3 sticky top-0 z-50 shadow-md border-b">
