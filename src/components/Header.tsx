@@ -1,12 +1,16 @@
+import { useState } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo-dk-corrimao.png";
+import QuoteModal from "./QuoteModal";
 
 const Header = () => {
   const whatsappPrincipal = "5511911569919";
   const whatsappSecundario = "5511952998873";
   const phoneNumber = "11 2574-2864";
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
+    <>
     <header className="bg-white text-foreground py-2 sm:py-3 sticky top-0 z-50 shadow-md border-b">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-4">
@@ -22,28 +26,26 @@ const Header = () => {
               <Phone size={16} className="flex-shrink-0" />
               <span className="truncate">{phoneNumber}</span>
             </a>
-            <a
-              href={`https://wa.me/${whatsappPrincipal}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => setIsModalOpen(true)}
               className="flex items-center gap-1.5 bg-green-500 text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg font-semibold hover:bg-green-600 transition-all text-xs sm:text-sm w-full sm:w-auto justify-center"
             >
               <MessageCircle size={16} className="flex-shrink-0" />
               <span>WhatsApp Principal</span>
-            </a>
-            <a
-              href={`https://wa.me/${whatsappSecundario}`}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              onClick={() => setIsModalOpen(true)}
               className="flex items-center gap-1.5 bg-green-600 text-white px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg font-semibold hover:bg-green-700 transition-all text-xs sm:text-sm w-full sm:w-auto justify-center"
             >
               <MessageCircle size={16} className="flex-shrink-0" />
               <span>WhatsApp 2</span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
     </header>
+    <QuoteModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+    </>
   );
 };
 

@@ -7,7 +7,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { Send } from "lucide-react";
 
-const QuoteForm = () => {
+interface QuoteFormProps {
+  onSuccess?: () => void;
+}
+
+const QuoteForm = ({ onSuccess }: QuoteFormProps) => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     steelType: "",
@@ -21,7 +25,7 @@ const QuoteForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const whatsappNumber = "5511911569919";
+    const whatsappNumber = "5511911589919";
     const message = `
 *Solicitação de Orçamento - Corrimão Inox*
 
@@ -42,14 +46,14 @@ ${formData.cnpj ? `*CNPJ:* ${formData.cnpj}` : ''}
       title: "Redirecionando para o WhatsApp",
       description: "Em instantes você será direcionado para conversar conosco!",
     });
+
+    if (onSuccess) {
+      onSuccess();
+    }
   };
 
   return (
-    <div className="bg-card rounded-xl shadow-xl p-3 md:p-4">
-      <h3 className="text-lg font-bold text-primary mb-1">Solicite seu Orçamento</h3>
-      <p className="text-muted-foreground text-xs mb-3">Preencha e receba uma proposta</p>
-      
-      <form onSubmit={handleSubmit} className="space-y-2">
+    <form onSubmit={handleSubmit} className="space-y-3">
         <div>
           <Select 
             required
@@ -126,12 +130,11 @@ ${formData.cnpj ? `*CNPJ:* ${formData.cnpj}` : ''}
           />
         </div>
 
-        <Button type="submit" className="w-full bg-primary hover:bg-primary-dark py-4 font-bold text-sm">
-          <Send className="mr-2" size={16} />
-          Solicitar Orçamento Grátis
-        </Button>
-      </form>
-    </div>
+      <Button type="submit" className="w-full bg-primary hover:bg-primary-dark py-4 font-bold text-sm">
+        <Send className="mr-2" size={16} />
+        Solicitar Orçamento Grátis
+      </Button>
+    </form>
   );
 };
 

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import gallery1 from "@/assets/gallery-escada-interna.jpg";
 import gallery2 from "@/assets/gallery-rampa-banco.jpg";
 import gallery3 from "@/assets/gallery-rampa-area-verde.jpg";
@@ -5,6 +6,7 @@ import gallery4 from "@/assets/gallery-rampa-edificio.jpg";
 import gallery5 from "@/assets/gallery-hospital.jpg";
 import { MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
+import QuoteModal from "./QuoteModal";
 
 const galleryImages = [
   { src: gallery1, alt: "Corrimão duplo de inox em escada interna" },
@@ -15,9 +17,10 @@ const galleryImages = [
 ];
 
 const GallerySection = () => {
-  const whatsappNumber = "5511911569919";
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
+    <>
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
@@ -58,7 +61,7 @@ const GallerySection = () => {
             <Button
               size="lg"
               className="bg-green-500 hover:bg-green-600 text-white font-bold text-sm sm:text-base md:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto"
-              onClick={() => window.open(`https://wa.me/${whatsappNumber}`, '_blank')}
+              onClick={() => setIsModalOpen(true)}
             >
               <MessageCircle className="mr-2 flex-shrink-0" size={20} />
               <span className="hidden sm:inline">Fale com um Especialista no WhatsApp</span>
@@ -68,6 +71,8 @@ const GallerySection = () => {
         </div>
       </div>
     </section>
+    <QuoteModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+    </>
   );
 };
 

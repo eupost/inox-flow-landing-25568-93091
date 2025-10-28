@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { CheckCircle2, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
+import QuoteModal from "./QuoteModal";
 
 const TechnicalInfoSection = () => {
-  const whatsappNumber = "5511911569919";
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
+    <>
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -61,66 +64,19 @@ const TechnicalInfoSection = () => {
             <Button
               size="lg"
               className="bg-green-500 hover:bg-green-600 text-white font-bold text-sm sm:text-base md:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full md:w-auto"
-              onClick={() => window.open(`https://wa.me/${whatsappNumber}`, '_blank')}
+              onClick={() => setIsModalOpen(true)}
             >
               <MessageCircle className="mr-2 flex-shrink-0" size={20} />
               <span className="hidden sm:inline">Tire Suas Dúvidas no WhatsApp</span>
               <span className="sm:hidden">Dúvidas WhatsApp</span>
             </Button>
           </div>
-
-          <div className="bg-gradient-primary rounded-2xl p-6 sm:p-8 md:p-10 text-primary-foreground">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6">
-              Tipos de Aço Inox Disponíveis
-            </h3>
-            
-            <div className="space-y-6">
-              <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-4 sm:p-6">
-                <h4 className="text-lg sm:text-xl font-bold mb-3">Aço Inox 304</h4>
-                <p className="text-sm sm:text-base opacity-95 leading-relaxed mb-4">
-                  Ideal para ambientes internos e áreas protegidas. Oferece excelente resistência à corrosão, durabilidade superior e ótimo custo-benefício.
-                </p>
-                <ul className="space-y-2 opacity-95 text-sm sm:text-base">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 size={16} className="flex-shrink-0" />
-                    <span>Resistente à maioria dos ambientes</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 size={16} className="flex-shrink-0" />
-                    <span>Melhor custo-benefício</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 size={16} className="flex-shrink-0" />
-                    <span>Acabamento polido ou escovado</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-4 sm:p-6">
-                <h4 className="text-lg sm:text-xl font-bold mb-3">Aço Inox 316</h4>
-                <p className="text-sm sm:text-base opacity-95 leading-relaxed mb-4">
-                  Recomendado para ambientes marinhos, áreas costeiras e locais com alta exposição a químicos. Resistência superior à corrosão.
-                </p>
-                <ul className="space-y-2 opacity-95 text-sm sm:text-base">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 size={16} className="flex-shrink-0" />
-                    <span>Resistente a ambientes marinhos</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 size={16} className="flex-shrink-0" />
-                    <span>Maior resistência química</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 size={16} className="flex-shrink-0" />
-                    <span>Ideal para áreas com cloro</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+...
         </div>
       </div>
     </section>
+    <QuoteModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+    </>
   );
 };
 

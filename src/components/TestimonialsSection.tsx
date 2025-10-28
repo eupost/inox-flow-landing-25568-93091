@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Star } from "lucide-react";
+import QuoteModal from "./QuoteModal";
 
 const testimonials = [
   {
@@ -32,7 +34,10 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
+    <>
     <section className="py-16 md:py-20 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
@@ -77,10 +82,8 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a
-            href="https://wa.me/5511911569919?text=Olá! Gostaria de solicitar um orçamento para corrimão de aço inox."
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => setIsModalOpen(true)}
             className="inline-flex items-center gap-2 bg-green-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-xl"
           >
             <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -88,10 +91,12 @@ const TestimonialsSection = () => {
             </svg>
             <span className="hidden sm:inline">Faça Seu Orçamento Pelo WhatsApp</span>
             <span className="sm:hidden">Orçamento WhatsApp</span>
-          </a>
+          </button>
         </div>
       </div>
     </section>
+    <QuoteModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+    </>
   );
 };
 
