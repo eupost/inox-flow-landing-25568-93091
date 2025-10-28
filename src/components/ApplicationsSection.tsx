@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Home, Building2, Waves, Store, Hospital, Accessibility, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
+import QuoteModal from "./QuoteModal";
 
 const applications = [
   {
@@ -35,7 +37,10 @@ const applications = [
 ];
 
 const ApplicationsSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
+    <>
     <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
@@ -79,7 +84,7 @@ const ApplicationsSection = () => {
           <Button
             size="lg"
             className="bg-green-500 hover:bg-green-600 text-white font-bold text-sm sm:text-base md:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto"
-            onClick={() => window.open(`https://wa.me/5511952477224`, '_blank')}
+            onClick={() => setIsModalOpen(true)}
           >
             <MessageCircle className="mr-2 flex-shrink-0" size={20} />
             <span className="hidden sm:inline">Solicitar Visita Técnica Grátis</span>
@@ -88,6 +93,8 @@ const ApplicationsSection = () => {
         </div>
       </div>
     </section>
+    <QuoteModal open={isModalOpen} onOpenChange={setIsModalOpen} />
+    </>
   );
 };
 
