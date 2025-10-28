@@ -1,19 +1,17 @@
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import gallery1 from "@/assets/gallery-escada-interna.jpg";
+import gallery2 from "@/assets/gallery-rampa-banco.jpg";
+import gallery3 from "@/assets/gallery-rampa-area-verde.jpg";
+import gallery4 from "@/assets/gallery-rampa-edificio.jpg";
+import gallery5 from "@/assets/gallery-hospital.jpg";
 import { MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 
 const galleryImages = [
-  { src: gallery1, alt: "Corrimão de inox em edifício comercial" },
-  { src: gallery2, alt: "Corrimão de inox em varanda com vista para o mar" },
-  { src: gallery3, alt: "Corrimão de inox em escada em espiral" },
-  { src: gallery4, alt: "Corrimão de inox em área de piscina" },
-  { src: gallery5, alt: "Corrimão de inox em hospital" },
-  { src: gallery6, alt: "Corrimão de inox em rampa acessível" },
+  { src: gallery1, alt: "Corrimão duplo de inox em escada interna" },
+  { src: gallery2, alt: "Corrimão de inox em rampa de acessibilidade - Banco do Brasil" },
+  { src: gallery3, alt: "Corrimão de inox em rampa externa com área verde" },
+  { src: gallery4, alt: "Corrimão de inox em rampa de acessibilidade em edifício moderno" },
+  { src: gallery5, alt: "Corrimão duplo de inox em corredor hospitalar" },
 ];
 
 const GallerySection = () => {
