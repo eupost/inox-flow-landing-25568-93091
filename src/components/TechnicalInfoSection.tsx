@@ -73,52 +73,52 @@ const TechnicalInfoSection = () => {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-card border border-border rounded-lg p-6 shadow-md hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-primary mb-4">Aço Inox 304</h3>
-              <p className="text-sm text-muted-foreground mb-4">
+            <div className="bg-gradient-to-br from-primary/10 via-primary/5 to-background border-2 border-primary/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300">
+              <h3 className="text-3xl font-bold text-primary mb-4">Aço Inox 304</h3>
+              <p className="text-lg text-foreground mb-6 leading-relaxed">
                 O aço inoxidável 304 é o tipo mais comum e versátil, ideal para a maioria das aplicações.
               </p>
-              <div className="space-y-2">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
-                  <p className="text-xs text-foreground">Excelente para ambientes internos</p>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <p className="text-base text-foreground">Excelente para ambientes internos</p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
-                  <p className="text-xs text-foreground">Ótima resistência à corrosão em áreas urbanas</p>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <p className="text-base text-foreground">Ótima resistência à corrosão em áreas urbanas</p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
-                  <p className="text-xs text-foreground">Custo-benefício ideal para residências e comércios</p>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <p className="text-base text-foreground">Custo-benefício ideal para residências e comércios</p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
-                  <p className="text-xs text-foreground">Acabamento polido ou escovado</p>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <p className="text-base text-foreground">Acabamento polido ou escovado</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-card border border-border rounded-lg p-6 shadow-md hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-primary mb-4">Aço Inox 316</h3>
-              <p className="text-sm text-muted-foreground mb-4">
+            <div className="bg-gradient-to-br from-primary/10 via-primary/5 to-background border-2 border-primary/20 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300">
+              <h3 className="text-3xl font-bold text-primary mb-4">Aço Inox 316</h3>
+              <p className="text-lg text-foreground mb-6 leading-relaxed">
                 O aço inoxidável 316 possui molibdênio em sua composição, oferecendo resistência superior.
               </p>
-              <div className="space-y-2">
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
-                  <p className="text-xs text-foreground">Perfeito para áreas litorâneas e maresias</p>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <p className="text-base text-foreground">Perfeito para áreas litorâneas e maresias</p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
-                  <p className="text-xs text-foreground">Ideal para piscinas e ambientes úmidos</p>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <p className="text-base text-foreground">Ideal para piscinas e ambientes úmidos</p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
-                  <p className="text-xs text-foreground">Resistência superior à corrosão química</p>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <p className="text-base text-foreground">Resistência superior à corrosão química</p>
                 </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle2 className="text-primary flex-shrink-0 mt-0.5" size={16} />
-                  <p className="text-xs text-foreground">Recomendado para indústrias e hospitais</p>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                  <p className="text-base text-foreground">Recomendado para indústrias e hospitais</p>
                 </div>
               </div>
             </div>
