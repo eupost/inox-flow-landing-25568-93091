@@ -25,6 +25,15 @@ const QuoteForm = ({ onSuccess }: QuoteFormProps) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Dispara evento de conversão do Google Ads
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17663236899/wDg9CMimz68bEKO2vuZB',
+        'value': 1.0,
+        'currency': 'BRL'
+      });
+    }
+    
     const whatsappNumber = "5511911589919";
     const message = `
 *Solicitação de Orçamento - Corrimão Inox*
