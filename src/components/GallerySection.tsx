@@ -4,6 +4,7 @@ import gallery2 from "@/assets/gallery-rampa-banco.jpg";
 import gallery3 from "@/assets/gallery-rampa-area-verde.jpg";
 import gallery4 from "@/assets/gallery-rampa-edificio.jpg";
 import gallery5 from "@/assets/gallery-hospital.jpg";
+import gallery6 from "@/assets/gallery-rampa-banco-brasil.jpg";
 import { MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import QuoteModal from "./QuoteModal";
@@ -14,6 +15,7 @@ const galleryImages = [
   { src: gallery3, alt: "Corrimão de inox em rampa externa com área verde" },
   { src: gallery4, alt: "Corrimão de inox em rampa de acessibilidade em edifício moderno" },
   { src: gallery5, alt: "Corrimão duplo de inox em corredor hospitalar" },
+  { src: gallery6, alt: "Corrimão de inox em rampa de acessibilidade - Banco do Brasil" },
 ];
 
 const GallerySection = () => {
