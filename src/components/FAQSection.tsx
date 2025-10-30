@@ -11,12 +11,24 @@ const faqs = [
     answer: "O aço inox 304 é o tipo mais comum e é ideal para ambientes internos e áreas urbanas. O aço inox 316 possui uma adição de molibdênio em sua composição, o que lhe confere uma resistência superior à corrosão. Por isso, é a escolha recomendada para ambientes agressivos, como áreas litorâneas, piscinas e indústrias.",
   },
   {
+    question: "Qual a diferença entre corrimão de aço inox e aço carbono?",
+    answer: "O aço inox é resistente à corrosão e não enferruja, ideal para ambientes internos e externos sem necessidade de pintura. Já o aço carbono é mais econômico e robusto, perfeito para áreas internas ou quando há acabamento com pintura. Ambos oferecem alta resistência e segurança, sendo a escolha baseada no ambiente e orçamento do projeto.",
+  },
+  {
     question: "O corrimão de inox pode ser instalado em área externa?",
     answer: "Sim! A resistência do corrimão de inox o torna perfeito para áreas externas. Apenas certifique-se de utilizar o aço inox 316 se a instalação for em uma região próxima ao mar para evitar problemas com a maresia.",
   },
   {
+    question: "Quando é recomendado usar corrimão de aço carbono?",
+    answer: "O aço carbono é ideal para ambientes internos, áreas industriais e locais onde haverá acabamento com pintura. É uma excelente opção quando se busca alta resistência mecânica com custo-benefício, sendo muito utilizado em escadas industriais, fábricas e edifícios comerciais.",
+  },
+  {
     question: "Como é feita a limpeza do corrimão de aço inox?",
     answer: "A manutenção é muito simples! Basta usar um pano macio com água e sabão neutro. Evite produtos abrasivos, palhas de aço ou químicos fortes que possam danificar o acabamento da peça.",
+  },
+  {
+    question: "O corrimão de aço carbono precisa de manutenção?",
+    answer: "Sim, o aço carbono requer manutenção periódica com pintura para proteção contra oxidação. Recomendamos inspeção regular e repintura quando necessário. Com os devidos cuidados, oferece excelente durabilidade e resistência estrutural por muitos anos.",
   },
   {
     question: "Vocês seguem as normas da ABNT e dos bombeiros?",
@@ -41,7 +53,7 @@ const FAQSection = () => {
             Perguntas Frequentes
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
-            Tire suas dúvidas sobre corrimãos de aço inox
+            Tire suas dúvidas sobre corrimãos de aço inox e aço carbono
           </p>
         </div>
 
