@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "Vocês seguem as normas da ABNT e dos bombeiros?",
-    answer: "Sim! Todos os nossos corrimãos são fabricados e instalados seguindo rigorosamente as normas ABNT NBR 9050 (acessibilidade), NBR 9077 (saídas de emergência) e NBR 14718 (guarda-corpos). Garantimos segurança e conformidade total.",
+    answer: "Sim! Todos os nossos corrimãos são fabricados e instalados seguindo rigorosamente as normas ABNT NBR 9050 (acessibilidade), NBR 9077 (saídas de emergência), NBR 5628 (componentes construtivos estruturais) e NBR 14718 (guarda-corpos). Garantimos segurança e conformidade total.",
   },
   {
     question: "Qual o prazo de instalação?",

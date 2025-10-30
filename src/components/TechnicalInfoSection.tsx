@@ -33,6 +33,26 @@ const TechnicalInfoSection = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
                 <div>
+                  <h3 className="text-sm sm:text-base font-bold text-foreground mb-1">NBR 9077 - Saídas de Emergência</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">
+                    Atendemos às exigências para saídas de emergência em edificações, garantindo segurança em situações críticas.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                <div>
+                  <h3 className="text-sm sm:text-base font-bold text-foreground mb-1">NBR 5628 - Componentes Construtivos</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">
+                    Seguimos as especificações técnicas para componentes construtivos estruturais em aço, assegurando qualidade e durabilidade.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="text-primary flex-shrink-0 mt-1" size={20} />
+                <div>
                   <h3 className="text-sm sm:text-base font-bold text-foreground mb-1">NBR 14718 - Guarda-Corpos</h3>
                   <p className="text-xs sm:text-sm text-muted-foreground">
                     Instalação de guarda-corpos seguindo especificações de altura mínima, espaçamento entre elementos e resistência estrutural.
