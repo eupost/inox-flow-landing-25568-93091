@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-6 lg:gap-10 items-center">
           <div className="text-center md:text-left flex flex-col justify-center">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-              Corrimão de Aço Inox e Carbono <span className="block text-primary-light mt-2">Sob Medida</span>
+              Corrimão de Aço Inox e Aço Carbono <span className="block text-primary-light mt-2">Sob Medida</span>
             </h1>
             <p className="text-sm sm:text-base md:text-lg mb-6 opacity-95 leading-relaxed max-w-xl">
               Fabricação e instalação profissional para residências, comércios e indústrias. Qualidade, segurança e conformidade com normas ABNT.

@@ -6,7 +6,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-3">DK Corrimão</h3>
             <p className="text-sm opacity-90">
-              Excelência em corrimãos de aço inox. Qualidade, segurança e design para seu projeto.
+              Excelência em corrimãos de aço inox e aço carbono. Qualidade, segurança e design para seu projeto.
             </p>
           </div>
           
